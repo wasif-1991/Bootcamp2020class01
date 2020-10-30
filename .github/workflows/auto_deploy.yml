@@ -27,7 +27,7 @@ jobs:
           node-version: 12  
 
       # Runs a set of commands using the runners shell
-      - name: Installing Surge
+      - name: Installing surge
         run: npm install --global surge
       - name: Deploying using Surge
-        run: surge ./ bc_2020_cls01.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+        run: surge ./ bc_2020_cls01.surge.sh --token ${{ secrets.SURGE_TOKEN }}
